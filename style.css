@@ -99,10 +99,7 @@ nav {
 }
 
 #nav_logo {
-    /* neni potreba, jelikoz menim barvu pres filter
-    background-image: url(./images/logo\ 72\ alpha.png);
-	*/
-    background-image: url(./images/gold\ logo.png);
+    background-image: url(./images/gold_logo.png);
     filter: grayscale(100%) saturate(0%) brightness(48.5%);
     background-size: contain;
     background-repeat: no-repeat;
@@ -117,9 +114,6 @@ nav {
     background-color: rgba(78, 78, 78, 0.5);
     cursor: pointer;
     filter: none;
-    /* neni potreba, jelikoz menim barvu pres filter
-    background-image: url(./images/gold\ logo.png);
-	*/
 }
 
 #nav_buttons {
@@ -173,5 +167,11 @@ footer {
 @media screen and (min-width: 2000px) {
     header {
         background-image: url(images/mars-4k.jpg);
+    }
+    #nav_logo {
+        background-image: url(./images/gold_logo_fhd.png);
+    }
+    #logo {
+        background-image: url(images/logo_darker_transparrent_fhd.png);
     }
 }
