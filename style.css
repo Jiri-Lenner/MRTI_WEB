@@ -1,3 +1,4 @@
+/*Body*/
 
 body{
     display: flex;
@@ -8,12 +9,16 @@ body{
 /*HEADER*/
 
 header{
-   height: 100vh;
    position: relative;
-   background-image: url(images/mars.jpg);
+   background-image: url(images/mars-fhd.jpg);
    background-size: cover;
    background-position: bottom;
+   height: 100vh;
+   min-height: 800px;
+   z-index: 2;
+   box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 nav{
     height: 60px;
@@ -33,17 +38,32 @@ nav{
     position: absolute;
     width: 200px;
     height: 60px;
-    top: 80vh;
+    bottom: 100px;
     z-index: 2;
     background-color: rgb(38, 38, 38);
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(72, 72, 72);
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .link_buttons:hover{
     box-shadow: 0px 0px 20px 10px rgba(72, 72, 72, 1);
     cursor: pointer;
+    color: rgb(189, 143, 91);
+}
+
+.separator{
+    background-color: rgb(72, 72, 72);
+    width: 3px;
+    height: 70%;
 }
 
 #link_buttons_right{
@@ -57,12 +77,70 @@ nav{
     position: absolute;
     width: 300px;
     height: 350px;
-    left: 41%;
-    top: 80px;
     background-image: url(images/logo_darker_transparrent.png);
     background-position: center;
     background-size: cover;
+    left: 50%;
+    margin-left: -150px;
+    top: 8%;
 }
+
+#logo:hover{
+    filter: brightness(125%);
+}
+
+/*NAV*/
+
+#nav_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav_logo{
+    background-image: url(./images/logo\ 72\ alpha.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 70px;
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#nav_logo:hover{
+    background-color: rgba(78, 78, 78, 0.5);
+    cursor: pointer;
+    background-image: url(./images/gold\ logo.png);
+}
+
+#nav_buttons{
+    width: 700px;
+    height: 100%;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: rgba(72, 72, 72, 1);
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.buttons:hover{
+    color: rgb(189, 143, 91);
+    background-color: rgba(78, 78, 78, 0.5);
+}
+
+
 
 /*MAIN*/
 

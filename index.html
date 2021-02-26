@@ -7,35 +7,56 @@
     <link rel="stylesheet" href="style.css"> <!--Stylesheet-->
     <link rel="stylesheet" href="https://api.cajthaml.eu/upload/reset_595b8cd7ad.css"> <!--Reset-->
     <link rel="script" href="implement.js">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>MRTI</title>
 </head>
 
 <body>
-    <header>
+    <header id="intro_part">
         <!--Nav-->
-        <nav class="sticky">
+        <nav class="sticky" id="nav_container">
+            <!--Logo-->
+            <a id="nav_logo" href="#intro_part">
+                
+            </a>
+
+            <!--Buttons-->
+            <div id="nav_buttons">       
+                <a href="#main_part" class="buttons">
+                    <p>Články</p>
+                </a>
+                <a href="#contacts_part" class="buttons">
+                    <p>Kontakty</p>
+                </a>
+                <a href="" class="buttons">
+                    <p>O nás</p>
+                </a>
+            </div>
 
         </nav>
         
         <!--First but-->
-        <div class="link_buttons" id="link_buttons_right">
-            
-        </div>
-        
+        <a class="link_buttons" id="link_buttons_left" href="https://www.facebook.com/Mars-Residence-Technology-Institute-101851725239070">
+            <i class="fab fa-facebook-square"></i>
+            <div class="separator"></div>
+            <p>Facebook</p>
+        </a>
+
         <!--Second but-->
-        <div class="link_buttons" id="link_buttons_left">
-            
-        </div>
+        <a class="link_buttons" id="link_buttons_right" href="https://www.instagram.com/mrt.inst/">
+            <i class="fab fa-instagram"></i>
+            <div class="separator"></div>
+            <p>Instagram</p>
+        </a>
 
         <!--Logo-->        
-        <div id="logo">
-
-        </div>
+        <div id="logo"></div>
 
     </header>
     
-    <main>
+    <main id="main_part">
     
         <article id="articletop"></article>
     
@@ -43,7 +64,7 @@
     
     </main>
     
-    <footer>
+    <footer id="contacts_part">
     
     </footer>
 </body>
