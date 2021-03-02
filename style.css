@@ -198,15 +198,100 @@ main {
 
 .seperate{
     margin-top: 19px;
-    margin-bottom: 19px;
+    margin-bottom: 29px;
     background-color: rgb(72, 72, 72);
     height: 7px;
     width: 80%;
 }
 
 .actual{
-    height: 1555px;
+    height: 1545px;
     width: 100%;
+    
+}
+
+#divide{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+
+.item{
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.left{
+    display: grid;
+    grid-template-rows: 1.1fr 2fr 1fr;
+    gap: 10px;
+}
+
+.left_head{
+    padding-bottom: 10px;
+}
+
+.left_header{
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(189, 143, 91);
+    border-bottom: dashed 5px rgb(72, 72, 72);
+    width: 300px;
+    height: 100%;
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.left_text{
+    padding: 10px;
+    color: rgb(189, 143, 91);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3em;
+    word-spacing: 2px;
+    line-height: 25px;;
+}
+
+.left_link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left_item{
+    width: 200px;
+    height: 70%;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: dashed rgb(72, 72, 72) 5px;
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(72, 72, 72);
+}
+
+.left_item:hover{
+    border: dashed rgb(189, 143, 91) 5px;
+    color: rgb(189, 143, 91);
+}
+
+.right{
+    background-color: gold;
+    border-radius: 15px;
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/pia22486-main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.item:hover{
+    background-color: rgba(72, 72, 72, 0.5);
 }
 
 #left_top{
