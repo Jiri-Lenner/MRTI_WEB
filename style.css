@@ -207,14 +207,17 @@ main {
 .actual{
     height: 1545px;
     width: 100%;
-    
 }
 
 #divide{
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
+#newdivide{
+    display: grid;
+    grid-template-rows: repeat(14, 1fr);
+}
 
 .item{
     padding: 30px;
@@ -290,6 +293,29 @@ main {
     background-size: cover;
 }
 
+.item_right{
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.his_text{
+    padding-bottom: 10px;
+    border-bottom: dashed 5px rgb(72, 72, 72);
+    width: 250px;
+    text-align: center;
+    font-size: 1.5em;    
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(189, 143, 91);
+}
+
+.item_right:hover{
+    background-color: rgba(72, 72, 72, 0.5); 
+}
+
 .item:hover{
     background-color: rgba(72, 72, 72, 0.5);
 }
@@ -320,6 +346,61 @@ main {
 footer {
     height: 300px;
     background-color: rgb(38, 38, 38);
+    position: relative;
+}
+
+#left_foot{
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: rgb(189, 143, 91);
+
+}
+
+#foothead{
+    border-bottom: 5px dashed rgb(72, 72, 72);
+    padding-bottom: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.linkcont{
+    margin-top: -75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.deco{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+    width: 250px;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.deco:hover{
+    background-color: rgb(189, 143, 91);
+}
+
+#right_foot{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(72, 72, 72);
 }
 
 @media screen and (min-width: 2000px) {
