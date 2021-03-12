@@ -1,5 +1,7 @@
 /*Body*/
 
+$font : 'Exo 2',
+sans-serif;
 body {
     display: flex;
     flex-direction: column;
@@ -157,7 +159,7 @@ main {
     position: relative;
 }
 
-#main_grid{
+#main_grid {
     grid-column: 1 / 8;
     background-color: rgb(38, 38, 38);
     border-radius: 20px;
@@ -169,7 +171,7 @@ main {
     overflow: hidden;
 }
 
-#right{
+#right {
     grid-column: 8 / 11;
     background-color: rgb(38, 38, 38);
     border-radius: 20px;
@@ -181,7 +183,7 @@ main {
     overflow: hidden;
 }
 
-.heading{
+.heading {
     height: 100px;
     width: 100%;
     display: flex;
@@ -192,11 +194,11 @@ main {
     color: rgb(189, 143, 91);
 }
 
-.header{
+.header {
     margin-top: 20px;
 }
 
-.seperate{
+.seperate {
     margin-top: 19px;
     margin-bottom: 29px;
     background-color: rgb(72, 72, 72);
@@ -204,22 +206,22 @@ main {
     width: 80%;
 }
 
-.actual{
+.actual {
     height: 1545px;
     width: 100%;
 }
 
-#divide{
+#divide {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
 
-#newdivide{
+#newdivide {
     display: grid;
     grid-template-rows: repeat(14, 1fr);
 }
 
-.item{
+.item {
     padding: 30px;
     border-radius: 15px;
     display: grid;
@@ -227,17 +229,17 @@ main {
     gap: 30px;
 }
 
-.left{
+.left {
     display: grid;
     grid-template-rows: 1.1fr 2fr 1fr;
     gap: 10px;
 }
 
-.left_head{
+.left_head {
     padding-bottom: 10px;
 }
 
-.left_header{
+.left_header {
     font-family: 'Exo 2', sans-serif;
     color: rgb(189, 143, 91);
     border-bottom: dashed 5px rgb(72, 72, 72);
@@ -250,22 +252,23 @@ main {
     padding-bottom: 5px;
 }
 
-.left_text{
+.left_text {
     padding: 10px;
     color: rgb(189, 143, 91);
     font-family: 'Exo 2', sans-serif;
     font-size: 1.3em;
     word-spacing: 2px;
-    line-height: 25px;;
+    line-height: 25px;
+    ;
 }
 
-.left_link{
+.left_link {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.left_item{
+.left_item {
     width: 200px;
     height: 70%;
     margin-right: 20px;
@@ -280,12 +283,12 @@ main {
     color: rgb(72, 72, 72);
 }
 
-.left_item:hover{
+.left_item:hover {
     border: dashed rgb(189, 143, 91) 5px;
     color: rgb(189, 143, 91);
 }
 
-.right{
+.right {
     background-color: gold;
     border-radius: 15px;
     background-image: url(https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/pia22486-main.jpg);
@@ -293,7 +296,7 @@ main {
     background-size: cover;
 }
 
-.item_right{
+.item_right {
     padding: 30px;
     border-radius: 15px;
     display: flex;
@@ -302,42 +305,42 @@ main {
     text-decoration: none;
 }
 
-.his_text{
+.his_text {
     padding-bottom: 10px;
     border-bottom: dashed 5px rgb(72, 72, 72);
     width: 250px;
     text-align: center;
-    font-size: 1.5em;    
+    font-size: 1.5em;
     font-family: 'Exo 2', sans-serif;
     color: rgb(189, 143, 91);
 }
 
-.item_right:hover{
-    background-color: rgba(72, 72, 72, 0.5); 
-}
-
-.item:hover{
+.item_right:hover {
     background-color: rgba(72, 72, 72, 0.5);
 }
 
-#left_top{
+.item:hover {
+    background-color: rgba(72, 72, 72, 0.5);
+}
+
+#left_top {
     position: absolute;
     left: 40px;
     top: 40px;
     width: 150px;
     height: 150px;
     border-top: 15px dashed rgb(38, 38, 38);
-    border-left: 15px dashed rgb(38, 38, 38);  
+    border-left: 15px dashed rgb(38, 38, 38);
 }
 
-#right_bottom{
+#right_bottom {
     position: absolute;
     right: 40px;
     bottom: 40px;
     width: 150px;
     height: 150px;
     border-right: 15px dashed rgb(38, 38, 38);
-    border-bottom: 15px dashed rgb(38, 38, 38); 
+    border-bottom: 15px dashed rgb(38, 38, 38);
 }
 
 
@@ -349,7 +352,7 @@ footer {
     position: relative;
 }
 
-#left_foot{
+#left_foot {
     position: absolute;
     left: 200px;
     top: 50px;
@@ -360,17 +363,16 @@ footer {
     justify-content: space-around;
     font-size: 2rem;
     color: rgb(189, 143, 91);
-
 }
 
-#foothead{
+#foothead {
     border-bottom: 5px dashed rgb(72, 72, 72);
     padding-bottom: 10px;
     text-align: center;
     width: 250px;
 }
 
-.linkcont{
+.linkcont {
     margin-top: -75px;
     display: flex;
     flex-direction: column;
@@ -378,8 +380,7 @@ footer {
     justify-content: flex-start;
 }
 
-
-.deco{
+.deco {
     padding-top: 5px;
     padding-bottom: 5px;
     text-decoration: none;
@@ -389,11 +390,11 @@ footer {
     font-family: 'Exo 2', sans-serif;
 }
 
-.deco:hover{
+.deco:hover {
     background-color: rgb(189, 143, 91);
 }
 
-#right_foot{
+#right_foot {
     position: absolute;
     right: 0px;
     bottom: 0px;
