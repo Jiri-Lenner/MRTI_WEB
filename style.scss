@@ -1,5 +1,7 @@
 /*Body*/
 
+$font: 'Exo 2',
+sans-serif;
 body {
     display: flex;
     flex-direction: column;
@@ -49,7 +51,7 @@ nav {
     align-items: center;
     font-size: 1.5em;
     color: rgb(72, 72, 72);
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     letter-spacing: 1px;
     text-decoration: none;
 }
@@ -134,7 +136,7 @@ nav {
     color: rgba(72, 72, 72, 1);
     font-size: 1.5em;
     letter-spacing: 3px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
 }
 
 .buttons:hover {
@@ -187,7 +189,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     font-size: 3em;
     color: rgb(189, 143, 91);
 }
@@ -238,7 +240,7 @@ main {
 }
 
 .left_header {
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     color: rgb(189, 143, 91);
     border-bottom: dashed 5px rgb(72, 72, 72);
     width: 300px;
@@ -253,7 +255,7 @@ main {
 .left_text {
     padding: 10px;
     color: rgb(189, 143, 91);
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     font-size: 1.3em;
     word-spacing: 2px;
     line-height: 25px;
@@ -277,7 +279,7 @@ main {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     color: rgb(72, 72, 72);
 }
 
@@ -309,7 +311,7 @@ main {
     width: 250px;
     text-align: center;
     font-size: 1.5em;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     color: rgb(189, 143, 91);
 }
 
@@ -385,7 +387,7 @@ footer {
     color: rgb(72, 72, 72);
     width: 250px;
     text-align: center;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
 }
 
 .deco:hover {
@@ -398,7 +400,7 @@ footer {
     bottom: 0px;
     padding: 20px;
     font-size: 1.5em;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font;
     color: rgb(72, 72, 72);
 }
 
